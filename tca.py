@@ -238,7 +238,7 @@ def test_rule0():
     expected_out = [0 for i in range(10)]
     initial = random_string(10)
     field = tca.spacetime_field(initial, 2)
-    
+
     for t, config in enumerate(field[1:]):
         assert array_equal(config, expected_out), \
         "Rule 0 test failed. Configuration after {} steps incorrect".format(t)
@@ -275,4 +275,4 @@ def test_rule19682():
 if __name__ == "__main__":
     test_rule0()
     test_rule9841()
-    test_rule19682()
+    test_rule19682() 

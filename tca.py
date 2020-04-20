@@ -172,7 +172,7 @@ class TCA:
         # apply the lookup table to evolve the CA
         # for the given number of time steps
 
-        for t in range(time_steps):
+        for _ in range(time_steps):
             new_configuration = []
 
             for i in range(length):
